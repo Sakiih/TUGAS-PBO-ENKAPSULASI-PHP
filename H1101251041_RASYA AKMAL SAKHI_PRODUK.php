@@ -107,8 +107,16 @@ $buku->setPenulis("Leila S. Chudori");
 $buku->setHarga(120000);
 $buku->setStok(10);
 $buku->setHalaman(379);
-$buku->setDiskon(20);
+$buku->setDiskon(10);
 
+$buku2 = new Buku();
+
+$buku2->setJudul("Hujan");
+$buku2->setPenulis("Tere Liye");
+$buku2->setHarga(100000);
+$buku2->setStok(5);
+$buku2->setHalaman(500);
+$buku2->setDiskon(5);
 
 // Menampilkan data menggunakan getter
 echo "===== DATA BUKU =====<br><br>";
@@ -118,6 +126,11 @@ echo "Penulis: " . $buku->getPenulis() . "<br>";
 echo "Harga: Rp" . $buku->getHarga() . "<br>";
 echo "Stok: " . $buku->getStok() . "<br>";
 echo "Halaman: " . $buku->getHalaman() . "<br>";
-echo "Diskon: " . $buku->getDiskon() . "%";
+echo "Diskon: " . $buku->getDiskon() . "%<br><br>";
 
-?>
+echo "Judul: " . $buku2->getJudul() . "<br>";
+echo "Penulis: " . $buku2->getPenulis() . "<br>";
+echo "Harga: Rp" . $buku2->getHarga() . "<br>";
+echo "Stok: " . $buku2->getStok() . "<br>";
+echo "Halaman: " . $buku2->getHalaman() . "<br>";
+echo "Diskon: " . $buku2->getDiskon() . "%";
