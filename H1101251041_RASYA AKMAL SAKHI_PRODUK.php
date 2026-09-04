@@ -134,3 +134,5 @@ echo "Harga: Rp" . $buku2->getHarga() . "<br>";
 echo "Stok: " . $buku2->getStok() . "<br>";
 echo "Halaman: " . $buku2->getHalaman() . "<br>";
 echo "Diskon: " . $buku2->getDiskon() . "%";
+
+?>
